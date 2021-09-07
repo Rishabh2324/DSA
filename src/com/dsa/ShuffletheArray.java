@@ -8,12 +8,13 @@ public class ShuffletheArray {
         System.out.println(Arrays.toString(shuffleArray(arr)));
     }
     static int[] shuffleArray(int[] nums){
-        int temp;
-        for (int i = 0; i < (nums.length / 2) - 1; i++) {
-            temp = nums[i+1];
-            nums[i+1] = nums[(nums.length / 2)+i-1];
-            nums[(nums.length / 2)+i-1] = temp;
+        int[] newArr = new int[nums.length];
+        for (int i=0 ; i<( nums.length/2) ; i++) {
+            newArr[2*i] = nums[i];
         }
-        return nums;
+        for (int i = 0 ; i < (nums.length/2) ; i++) {
+            newArr[2*i + 1] = nums[(nums.length / 2) + i];
+        }
+        return newArr;
     }
 }
