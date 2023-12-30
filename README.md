@@ -1,2 +1,2 @@
 # DSA
-DSA by JAVA
+DSA by JAVASCRIPT
